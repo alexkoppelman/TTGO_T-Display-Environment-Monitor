@@ -19,7 +19,7 @@ A to do item is to store the sensor data when offline and upload "backlog" when 
 - BME280
 - CCS811
 
-**To DO**
+**To Do**
 - Humidity values are not coming through. Sensor failing? need to test
 - Make a nice box
 - Store data when offline and upload "backlog" when online
