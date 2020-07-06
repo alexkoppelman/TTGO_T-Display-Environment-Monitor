@@ -6,12 +6,18 @@ When close to a known wifi network, it will connect and upload the data to the m
 
 A to do item is to store the sensor data when offline and upload "backlog" when online again.
 
+The most tricky part was to find the combination of Sensor libraries that would actually work. Many don't.
+
+Both of the sensors will share the I2C, so the code for the BME280 has been moved to an external file as an include from the main .ino. Taking the work of http://kstobbe.dk/2019/01/28/first-sensor-array/ as example. The CCCS811 code is embedded in the main .ino file.
+
 
 **Functionality:**
+- Shows Temperature, Humidity, Air pressure, eCO2 and TVOC values
 - Works Online and Offline
 - When online pushes data to MQTT 
 - Buttons to Sleep and Reset/Start
 - Battery powered for outdoors
+- Icons, Startup screen and Go to sleep screen
 
 **Parts List:**
 - TTGO T-Display ESP32
@@ -24,6 +30,6 @@ A to do item is to store the sensor data when offline and upload "backlog" when 
 - Make a nice box
 - Store data when offline and upload "backlog" when online
 
-The most tricky part was to find the combination of Sensor libraries that would actually work. Many don't.
-
-Both of the sensors will share the I2C, so the code for the BME280 has been moved to an external file as an include from the main .ino. Taking the work of http://kstobbe.dk/2019/01/28/first-sensor-array/ as example. The CCCS811 code is embedded in the main .ino file.
+**Icons / Images**
+Created images in Gimp and save in the target size as BMP using the 16bit R5G6B5 profile
+Converted the images to .c files using the LCD Image Converter (https://github.com/riuson/lcd-image-converter)
