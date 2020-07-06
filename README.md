@@ -1,7 +1,11 @@
 # TTGO_T-Display-Environment-Monitor
 
 I wanted a small portable device that would show me the Air quality around me. Since I'd like to bring it with (when cycling) it had to be battery operated and work without internet connection.
+
 When close to a known wifi network, it will connect and upload the data to the mqtt server.
+
+A to do item is to store the sensor data when offline and upload "backlog" when online again.
+
 
 **Functionality:**
 - Works Online and Offline
@@ -18,3 +22,8 @@ When close to a known wifi network, it will connect and upload the data to the m
 **To DO**
 - Humidity values are not coming through. Sensor failing? need to test
 - Make a nice box
+- Store data when offline and upload "backlog" when online
+
+The most tricky part was to find the combination of Sensor libraries that would actually work. Many don't.
+
+Both of the sensors will share the I2C, so the code for the BME280 has been moved to an external file as an include from the main .ino. Taking the work of http://kstobbe.dk/2019/01/28/first-sensor-array/ as example. The CCCS811 code is embedded in the main .ino file.
