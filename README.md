@@ -33,3 +33,7 @@ Both of the sensors will share the I2C, so the code for the BME280 has been move
 **Icons / Images**
 Created images in Gimp and save in the target size as BMP using the 16bit R5G6B5 profile
 Converted the images to .c files using the LCD Image Converter (https://github.com/riuson/lcd-image-converter)
+
+![ui](https://github.com/alexkoppelman/TTGO_T-Display-Environment-Monitor/blob/master/images/screen.jpg?raw=true)
+
+![Startup screen](https://github.com/alexkoppelman/TTGO_T-Display-Environment-Monitor/blob/master/images/startup.jpg?raw=true)
