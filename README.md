@@ -1,4 +1,4 @@
-# TTGO_T-Display-Environment-Monitor
+# TTGO_T-Display ESP32 Environment Monitor
 
 I wanted a small portable device that would show me the Air quality around me. Since I'd like to bring it with (when cycling) it had to be battery operated and work without internet connection.
 
